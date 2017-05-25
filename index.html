@@ -25,9 +25,15 @@
     flex-direction: column;
     align-items: flex-end;
   }
+  label {
+    margin: 2px;
+  }
   .inputs {
    display: flex;
     flex-direction: column;
+  }
+  input {
+   margin: 2px; 
   }
 </style>
 
@@ -37,9 +43,9 @@
   
   <form action="https://ijqxeocs8h.execute-api.us-east-1.amazonaws.com/prod/git_grep_service" method="post" target="_blank">
     <div class="labels">
-      <label for="repository">Repository:</label>
-      <label for="directory">Directory:</label>
-      <label for="regex">Regex:</label>
+      <label for="repository">Repository</label>
+      <label for="directory">Directory</label>
+      <label for="regex">Regex</label>
     </div>
     <div class="inputs">
       <input id="repository" type="text" name="repository">
