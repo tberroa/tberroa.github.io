@@ -14,7 +14,7 @@
     padding: 0px;
     margin: 5px;
   }
-  form {
+  .form {
     display: flex;
     flex-direction: row;
     margin-top: 20px;
@@ -42,16 +42,18 @@
   <h5>A simple service for grepping online git repositories.</h5>
   
   <form action="https://ijqxeocs8h.execute-api.us-east-1.amazonaws.com/prod/git_grep_service" method="post" target="_blank">
-    <div class="labels">
-      <label for="repository">Repository</label>
-      <label for="directory">Directory</label>
-      <label for="regex">Regex</label>
+    <div class="form">
+      <div class="labels">
+        <label for="repository">Repository</label>
+        <label for="directory">Directory</label>
+        <label for="regex">Regex</label>
+      </div>
+      <div class="inputs">
+        <input id="repository" type="text" name="repository">
+        <input id="directory" type="text" name="directory">
+        <input id="regex" type="text" name="regex">
+      </div> 
     </div>
-    <div class="inputs">
-      <input id="repository" type="text" name="repository">
-      <input id="directory" type="text" name="directory">
-      <input id="regex" type="text" name="regex">
-    </div> 
     <input type="submit" value="Submit">
   </form>
 </div>
