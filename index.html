@@ -2,6 +2,10 @@
   body {
     font-family: Arial;
   }
+  app {
+    display: flex;
+    flex-direction: column;
+  }
   h1 {
     padding: 0px;
     margin: 5px;
@@ -13,7 +17,7 @@
   form {
     display: flex;
     flex-direction: row;
-    margin: auto;
+    margin-top: 20px;
   }
   .labels {
     display: flex;
@@ -25,7 +29,7 @@
   }
 </style>
 
-<center>
+<div class="app">
   <h1>Git Grep Service</h1>
   <h5>A simple service for grepping online git repositories.</h5>
   
@@ -42,6 +46,6 @@
     </div> 
     <input type="submit" value="Submit">
   </form>
-</center>
+</div>
 
 
