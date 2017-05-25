@@ -18,40 +18,44 @@
     margin: 2vmin;
   }
   form {
+    background-color: red;
     height: 25vh;
     width: 100%;
     display: inline-block;
     text-align: center;
   }
-  .inputs {
+  .form-input-container {
+    background-color: green;
     height: 100%;
     width: 100%;
     display: flex;
     flex-direction: row;
     margin-top: 2vmin;
   }
-  .labels {
+  .form-label-container {
+    background-color: blue;
     height: 100%;
     width: 50%;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
   }
-  label {
+  .form-label {
     height: 30%;
     margin: 2vmin;
   }
-  .inputs {
+  .form-field-container {
+    background-color: yellow;
     height: 100%;
     width: 50%;
     display: flex;
     flex-direction: column;
   }
-  .fields {
+  .form-field {
    height: 30%;
    margin: 2vmin;
   }
-  .submit {
+  .form-submit {
     width: 100%;
   }
 </style>
@@ -64,19 +68,19 @@
   </div>
   
   <form action="https://ijqxeocs8h.execute-api.us-east-1.amazonaws.com/prod/git_grep_service" method="post" target="_blank">
-    <div class="inputs">
-      <div class="labels">
-        <label for="repository">Repository</label>
-        <label for="directory">Directory</label>
-        <label for="regex">Regex</label>
+    <div class="form-input-container">
+      <div class="form-label-container">
+        <label class="form-label" for="repository">Repository</label>
+        <label class="form-label" for="directory">Directory</label>
+        <label class="form-label" for="regex">Regex</label>
       </div>
-      <div class="inputs">
-        <input class="fields" id="repository" type="text" name="repository">
-        <input class="fields" id="directory" type="text" name="directory">
-        <input class="fields" id="regex" type="text" name="regex">
+      <div class="form-field-container">
+        <input class="form-field" id="repository" type="text" name="repository">
+        <input class="form-field" id="directory" type="text" name="directory">
+        <input class="form-field" id="regex" type="text" name="regex">
       </div>
     </div>
-    <input class="submit" type="submit" value="Submit" form="form">
+    <input class="form-submit" type="submit" value="Submit">
   </form>
   
 </div>
