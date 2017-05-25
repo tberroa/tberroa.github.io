@@ -14,6 +14,10 @@
     padding: 0px;
     margin: 5px;
   }
+  .form {
+    display: inline-block;
+    text-align: center;
+  }
   form {
     display: flex;
     flex-direction: row;
@@ -41,6 +45,7 @@
   <h1>Git Grep Service</h1>
   <h5>A simple service for grepping online git repositories.</h5>
   
+  <div class="form">
   <form action="https://ijqxeocs8h.execute-api.us-east-1.amazonaws.com/prod/git_grep_service" method="post" target="_blank">
     <div class="labels">
       <label for="repository">Repository</label>
@@ -54,6 +59,7 @@
     </div> 
     <input type="submit" value="Submit">
   </form>
+  </div>
 </div>
 </center>
 
