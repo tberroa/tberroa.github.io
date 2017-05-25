@@ -23,9 +23,16 @@
   <h5>A simple service for grepping online git repositories.</h5>
   
   <form action="https://ijqxeocs8h.execute-api.us-east-1.amazonaws.com/prod/git_grep_service" method="post" target="_blank">
-    <label for="repository">Repository:</label> <input id="repository" type="text" name="repository"><br>
-    <label for="directory">Directory:</label> <input id="directory" type="text" name="directory"><br>
-    <label for="regex">Regex:</label> <input id="regex" type="text" name="regex"><br>
+    <div class="labels">
+      <label for="repository">Repository:</label>
+      <label for="directory">Directory:</label>
+      <label for="regex">Regex:</label>
+    </div>
+    <div>
+      <input id="repository" type="text" name="repository">
+      <input id="directory" type="text" name="directory">
+      <input id="regex" type="text" name="regex">
+    </div> 
     <input type="submit" value="Submit">
   </form>
 </center>
