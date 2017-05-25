@@ -13,6 +13,9 @@
   form {
     margin-top: 20px;
   }
+  label {
+    width: 100px;
+  }
 </style>
 
 <center>
@@ -20,8 +23,9 @@
   <h5>A simple service for grepping online git repositories.</h5>
   
   <form action="https://ijqxeocs8h.execute-api.us-east-1.amazonaws.com/prod/git_grep_service" method="post" target="_blank">
-    Repository: <input type="text" name="repository"><br>
-    Regex: <input type="text" name="regex"><br>
+    <label>Repository:</label> <input type="text" name="repository"><br>
+    <label>Directory:</label> <input type="text" name="directory"><br>
+    <label>Regex:</label> <input type="text" name="regex"><br>
     <input type="submit" value="Submit">
   </form>
 </center>
