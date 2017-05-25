@@ -13,8 +13,13 @@
   form {
     margin-top: 20px;
   }
-  label {
-    width: 100px;
+  .labels {
+    display: flex;
+    flex-direction: column;
+  }
+  .inputs {
+   display: flex;
+    flex-direction: column;
   }
 </style>
 
@@ -28,7 +33,7 @@
       <label for="directory">Directory:</label>
       <label for="regex">Regex:</label>
     </div>
-    <div>
+    <div class="inputs">
       <input id="repository" type="text" name="repository">
       <input id="directory" type="text" name="directory">
       <input id="regex" type="text" name="regex">
