@@ -84,14 +84,16 @@
   
   <form action="https://ijqxeocs8h.execute-api.us-east-1.amazonaws.com/prod/git_grep_service" method="post" target="_blank">
     <div class="form-input-container">
-      <div class="form-label-container">
+      <div class="form-row-container">
         <label class="form-label" for="repository">Repository</label>
-        <label class="form-label" for="directory">Directory</label>
-        <label class="form-label" for="regex">Regex</label>
-      </div>
-      <div class="form-field-container">
         <input class="form-field" id="repository" type="text" name="repository">
+      </div>
+      <div class="form-row-container">
+        <label class="form-label" for="directory">Directory</label>
         <input class="form-field" id="directory" type="text" name="directory">
+      </div>
+      <div class="form-row-container">
+        <label class="form-label" for="regex">Regex</label>
         <input class="form-field" id="regex" type="text" name="regex">
       </div>
     </div>
